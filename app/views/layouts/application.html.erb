@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BergenBread</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title>Bergen Bread Distribution</title>
+    <%= render 'layouts/rails_default' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container visiblity:hidden">
+      <%= render 'layouts/quick_contact' %>
+      <%= render 'layouts/bergen_bread_banner' %>
+      <%= render 'layouts/navigation' %>
+      <%= yield %>
+      <%= render 'layouts/copyright' %>
+    </div>
   </body>
 </html>

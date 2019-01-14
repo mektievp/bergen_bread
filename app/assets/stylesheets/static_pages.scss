@@ -9,100 +9,210 @@ body {
 	background-color: $esperanzaGreen;
 }
 
-.bergen-bread-banner {
-	position: fixed;
-	top: 70px;
+.container{
+	border: solid 1px;
+	height: 685px;
 	width: 100%;
-	text-align: center;
-	font-size: 100px;
-	font-family: 'georgia';
-	color: $esperanzaGold;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: black;
-	font-weight: bold;
-	animation-name: bergen-bread-banner;
-	animation-duration: 1s;
 
-}
-
-.navigation {
-	a:link, a:visited {
+	.bergen-bread-banner-animate {
+		position: relative;
+		border: solid 1px;
+		top: 0px;
+		width: 100%;
+		text-align: center;
+		font-size: 100px;
+		font-family: 'georgia';
 		color: $esperanzaGold;
-		font-size: 36px;
-		text-decoration: none;
-		-webkit-text-stroke-width: 0.5px;
+		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: black;
-		padding-left: 20px;
-		padding-right: 20px;
-		font-family: 'verdana';
+		font-weight: bold;
+		animation-name: bergen-bread-banner;
+		animation-duration: 1s;
+
 	}
-	a:hover, a:active {
+
+	.bergen-bread-banner {
+		position: relative;
+		border: solid 1px;
+		top: 0px;
+		width: 100%;
+		text-align: center;
+		font-size: 100px;
+		font-family: 'georgia';
+		color: $esperanzaGold;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: black;
+		font-weight: bold;
+	}
+
+	.navigation {
+		a:link, a:visited {
+			color: $esperanzaGold;
+			font-size: 36px;
+			text-decoration: none;
+			-webkit-text-stroke-width: 0.5px;
+			-webkit-text-stroke-color: black;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-family: 'verdana';
+		}
+		a:hover {
+			color: white;
+		}
+		a:active {
+			color: white;
+		}
+		text-align: center;
+		width: 100%;
+		font-family: 'georgia';
+
+		.enter-animate {
+			position:relative;
+			border: solid 1px;
+			animation-name: navigation-enter-animate;
+			animation-duration: 2s;
+			top: 150px;
+			.active {
+				color: white;
+			}
+		}
+	
+		.tab-animate {
+			position:relative;
+			border: solid 1px;
+			animation-name: navigation-tab-animate;
+			animation-duration: .5s;
+			top: 0px;
+			.active {
+				color: white;
+			}
+		}
+	
+		.tab {
+			position:relative;
+			border: solid 1px;
+			top: 0px;
+			.active {
+				color: white;
+			}
+		}
+	
+		.home-animate {
+			position:relative;
+			border: solid 1px;
+			animation-name: navigation-home-animate;
+			animation-duration: .5s;
+			top: 150px;
+			.active {
+				color: white;
+			}
+		}
+	
+		.home {
+			position:relative;
+			border: solid 1px;
+			top: 150px;
+			.active {
+				color: white;
+			}
+		}
+	}
+
+	.quick-contact-animate {
+		position: relative;
+		border: solid 1px;
+		top: 0px;
+		height: 100px;
+		animation-name: quick-contact;
+		animation-duration: 4s;
 		color: white;
+		font-family: verdana;
+		font-size: 22px;
+		width: 100%;
+		text-align: center;
+		p {
+			position: relative;
+			text-align: center;
+			top: 50px;
+			border: solid 1px;
+			// bottom: 0px;
+			span {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
 	}
-	animation-name: navigation;
-	animation-duration: 2s;
-	position: fixed;
-	bottom: 375px;
-	text-align: center;
-	width: 100%;
-	font-family: 'georgia';
-}
 
-.quick-contact {
-	position: fixed;
-	top: 65px;
-	animation-name: quick-contact;
-	animation-duration: 4s;
-	color: white;
-	font-family: verdana;
-	font-size: 22px;
-	width: 100%;
-	text-align: center;
-	span {
-		padding-left: 20px;
-		padding-right: 20px;
+	.quick-contact {
+		position: relative;
+		border: solid 1px;
+		top: 0px;
+		height: 100px;
+		color: white;
+		font-family: verdana;
+		font-size: 22px;
+		width: 100%;
+		text-align: center;
+		p {
+			position: relative;
+			text-align: center;
+			top: 50px;
+			border: solid 1px;
+			span {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
 	}
-}
 
-.copyright {
-	position: fixed;
-	bottom: 0px;
-	width: 100%;
-	color: black;
-	font-family: verdana;
-	font-size: 18px;
-	font-weight: black;
-	text-align: left;
-}
-
-@keyframes bergen-bread-banner {
-	0%   { top: 0px; }
-	100% { top: 70px; }
-}
-
-@keyframes navigation {
-	0%   { bottom: 0px; visibility: hidden;}
-	50%  { bottom: 0px; visibility: hidden; }
-	100% { bottom: 375px; }
-}
-
-@keyframes quick-contact {
-	0%   { opacity: 0;}
-	50%  { opacity: 0; }
-	100% { opacity: 1; }
-}
-
-@-webkit-keyframes shine {
-	0%, 10% {
-		background-position: -1000px;
+	.content {
+		position: relative;
+		border: solid 1px;
+		height: 400px;
+		width: 100%;
 	}
-	20% {
-		background-position: top left;
+
+	.copyright {
+		position: relative;
+		border: solid 1px;
+		width: 100%;
+		color: black;
+		font-family: verdana;
+		font-size: 18px;
+		font-weight: black;
+		text-align: left;
 	}
-	90% {
-		background-position: top right;
+
+	@keyframes bergen-bread-banner {
+		0%   { top: -150px; }
+		100% { top: 0px; }
 	}
-	100% {
-		background-position: 1000px;
+
+	@keyframes navigation {
+		0%   { top: 800px; visibility: hidden;}
+		50%  { top: 800px; visibility: hidden; }
+		100% { top: 150px; }
+	}
+
+	@keyframes navigation-enter-animate {
+		0%   { top: 800px; visibility: hidden;}
+		50%  { top: 800px; visibility: hidden; }
+		100% { top: 150px; }
+	}
+
+	@keyframes navigation-tab-animate {
+		0%   { top: 150px; }
+		100% { top: 0; }
+	}
+
+	@keyframes navigation-home-animate {
+		0%   { top: 0px; }
+		100% { top: 150px; }
+	}
+
+	@keyframes quick-contact {
+		0%   { opacity: 0;}
+		50%  { opacity: 0; }
+		100% { opacity: 1; }
 	}
 }

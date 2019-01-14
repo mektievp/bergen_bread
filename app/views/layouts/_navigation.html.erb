@@ -1,0 +1,9 @@
+<div class='navigation'>
+	<div class=<%= @navigation_type %>>
+		<%= link_to "home", home_path, :class => params[:action] == 'home' ? 'active' : '' %>
+		<%= link_to "about us", about_us_path, :class => params[:action] == 'about_us' ? 'active' : ''   %>
+		<%= link_to "contact us", contact_us_path, :class => params[:action] == 'contact_us' ? 'active' : '' %>
+		<%= link_to "catalog", catalog_path, :class => params[:action] == 'catalog' ? 'active' : '' %>
+		<%= link_to "pricing", pricing_path, :class => params[:action] == 'pricing' ? 'active' : '' %>
+	</div>
+</div>
